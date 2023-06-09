@@ -5,7 +5,7 @@ class ApplicationController < Sinatra::Base
   get "/" do
     { message: "Good luck with your project!" }.to_json
   end
-
+  
   get "/movies" do
     movies = Movies.all
     movies.to_json
